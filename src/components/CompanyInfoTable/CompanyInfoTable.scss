@@ -1,0 +1,53 @@
+.resultTable {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.searchList {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    justify-content: flex-start;
+
+}
+
+.resultDetails {
+    height: 100%;
+    background-color: #fff;
+    flex: 3;
+    margin-left: 10px;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 5px;
+}
+
+.resultDetails > div > div {
+    margin: 10px 40px;
+}
+
+.companyName {
+    text-align: left;
+    color: #009688;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+@media (max-width: 900px){
+    .resultTable{
+        flex-direction: column;
+    }
+
+    .searchList {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .searchList > div {
+        margin: 5px;
+        width: 170px;
+
+    }
+}
